@@ -1,7 +1,7 @@
 <?php
 
 get_header(); ?>
-
+    <div class="w-100vw w-75vw-d pos-r-d" style="left: 25vw;">
 <!-- CONTENT START -->        
             <!-- TODO: DIA-SHOW -->
                 <div class="hero"  id="home">
@@ -29,8 +29,19 @@ get_header(); ?>
 
     
                <section id="projects" class="content content--clipped" >
-                   <div><h1>Project Showcase</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus excepturi, eaque expedita mollitia asperiores doloremque adipisci rem modi nemo.</p>
+                   <div class="gridContainer">
+                        <div class="gridContainer__child1"><!-- <a href="#"><img  src="url(https://picsum.photos/200/300?random=1")    alt="projekt 1"></a> -->
+                        </div>
+                        <div class="gridContainer__child2"><!-- <a href="#"><img src="url(https://picsum.photos/200/300?random=1") alt="projekt 1"></a> -->
+                        </div>
+                        <div class="gridContainer__child3"><!-- <a href="#"><img src="url(https://picsum.photos/200/300?random=1") alt="projekt 1"></a> -->
+                        </div>
+                        <div class="gridContainer__child4"><!-- <a href="#"><img src="url(https://picsum.photos/200/300?random=1") alt="projekt 1"></a> -->
+                        </div>
+                        <div class="gridContainer__child5"><!-- <a href="#"><img src="url(https://picsum.photos/200/300?random=1") alt="projekt 1"></a> -->
+                        </div>
+                        <div class="gridContainer__child6"><!-- <a href="#"><img src="url(https://picsum.photos/200/300?random=1") alt="projekt 1"></a> -->
+                        </div>
                 </div>
                    
                </section>
@@ -44,7 +55,7 @@ get_header(); ?>
 
 
 
-          </div>
+          
             
             
 <?php get_footer(); ?>
