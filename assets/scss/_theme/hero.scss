@@ -4,9 +4,9 @@ html{
 }
 
 .content{
-    width: 75vw;
+    width: 100%;
     position: relative;
-    left: 25vw;
+    
     top: -100vh;
     padding: 5% 5%;
     
@@ -28,12 +28,11 @@ html{
 }
 
 .hero {
-    width: 75vw;
+    width: 100%;
     position: relative;
-    left: 25vw;
     top: -100vh;
     height: 100vh;
-    background-image: url(/assets/img/pexels-photography-maghradze-ph-3764958.jpg);
+    background-image: url(https://picsum.photos/id/870/200/300?grayscale&blur=2);
     clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
     background-position: center;
     background-repeat: no-repeat;

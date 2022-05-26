@@ -1,7 +1,5 @@
 .navigation{
-    width: 25vw;
-    height: 100vh;
-    background-color: black;
+    background-color: $color-00;
     z-index: 5;
     position: sticky;
     top: 0px;
@@ -19,11 +17,11 @@
         a{
             display:block;
             padding: 0.5rem 0;
-            background-color: black;
+            background-color: $color-00;
         }
         :hover{
             transition: 0.25s;
-            background-color: lightgray;
+            background-color: $color-01;
         }
 
         
@@ -43,7 +41,9 @@
             padding: 4rem;
           }
         
-        
+        &__logo{
+            text-align: left;
+        }
     }
     
 }
@@ -51,7 +51,7 @@
 .navigation.responsive{
     
     @media screen and (max-width: 980px) {
-        position: relative;
+        position: sticky;
 
          .navigation__links {
           float: none;

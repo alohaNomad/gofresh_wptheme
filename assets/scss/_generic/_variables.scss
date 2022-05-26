@@ -3,15 +3,15 @@
 // */
 $wp-meta : false;
 
-$wp-theme-name   : 'HaulyShit 2017';
-$wp-theme-uri    : 'HaulyShit.de';
-$wp-author       : 'Janis Hau';
-$wp-author-uri   : 'http://HaulyShit.de';
-$wp-desc         : "HaulyShit 2017";
-$wp-version      : '1.0';
+$wp-theme-name   : 'gofresh';
+$wp-theme-uri    : 'gofresh.de';
+$wp-author       : 'Marius Wolber';
+$wp-author-uri   : 'http://kommtnoch.de';
+$wp-desc         : "mein erstes wp theme";
+$wp-version      : '';
 $wp-license      : '';
 $wp-license-uri  : '';
-$wp-tags         : 'Blog';
+$wp-tags         : 'Blog', 'und so';
 $wp-ps           : "";
 
 
@@ -22,8 +22,8 @@ $wp-ps           : "";
 $map-viewports: (
     "m"  : "screen and (max-width: 640px)",
     "t"  : "screen and (min-width: 641px) and (max-width: 980px)",
-    "d"  : "screen and (min-width: 981px) and (max-width: 1199px)",
-    "hd" : "screen and (min-width: 1200px)"
+    "d"  : "screen and (min-width: 981px) and (max-width: 1900px)",
+    "hd" : "screen and (min-width: 1901px)"
 );
 
 
