@@ -1,7 +1,7 @@
 <?php
 
 get_header(); ?>
-
+    <div class="w-100vw w-75vw-d pos-r-d" style="left: 25vw;">
 <!-- CONTENT START -->        
             <!-- TODO: DIA-SHOW -->
                 <div class="hero"  id="home">
@@ -29,9 +29,83 @@ get_header(); ?>
 
     
                <section id="projects" class="content content--clipped" >
-                   <div><h1>Project Showcase</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus excepturi, eaque expedita mollitia asperiores doloremque adipisci rem modi nemo.</p>
-                </div>
+                   
+               <div class="photo-grid">
+        <a href=# alt="p1"
+        class="card card-tall card-wide"
+        style="background-image:url('https://images.unsplash.com/photo-1558981359-219d6364c9c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80')"
+        >
+        </a>
+
+        <a href=# alt="p2"
+        class="card card-tall"
+        style="background-image:url('https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80')"
+        >
+        </a>
+
+      <a href=# alt="p3"
+        class="card"
+        style="background-image:url('https://images.unsplash.com/photo-1583531172005-814191b8b6c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80')"
+      >
+      </a>
+
+      <a href=# alt="p4"
+        class="card"
+        style="background-image:url('https://images.unsplash.com/photo-1583426573939-97d09302d76a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80')"
+      >
+      </a>
+
+      <a href=# alt="p5"
+        class="card"
+        style="background-image:url('https://images.unsplash.com/photo-1583532452513-a02186582ccd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')"
+      >
+      </a>
+
+      <a href=# alt="p6"
+        class="card"
+        style="background-image:url('https://images.unsplash.com/photo-1583445013765-46c20c4a6772?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')"
+      >
+      </a>
+
+      <a href=# alt="p7"
+        class="card card-wide"
+        style="background-image:url('https://images.unsplash.com/photo-1583562835057-a62d1beffbf3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=949&q=80')"
+      >
+      </a>
+
+      <a href=# alt="p8"
+        class="card"
+        style="background-image:url('https://images.unsplash.com/photo-1583483425010-c566431a7710?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80')"
+      >
+      </a>
+
+      <a href=# alt="p9"
+        class="card"
+        style="background-image:url('https://images.unsplash.com/photo-1583500557349-fb5238f8d946?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80')"
+      >
+      </a>
+
+      <a href=# alt="p10"
+        class="card"
+        style="background-image:url('https://images.unsplash.com/photo-1583468323330-9032ad490fed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80')"
+      >
+      </a>
+
+      <a href=# alt="p11"
+        class="card"
+        style="background-image:url('https://images.unsplash.com/photo-1583425423320-2386622cd2e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1980&q=80')"
+      >
+      </a>
+
+      <a href=# alt="p12"
+        class="card"
+        style="background-image:url('https://images.unsplash.com/photo-1583518257225-f9a8081f6a84?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')"
+      >
+      </a>
+      
+    </div>
+                 
+                
                    
                </section>
                
@@ -44,7 +118,7 @@ get_header(); ?>
 
 
 
-          </div>
+          
             
             
 <?php get_footer(); ?>

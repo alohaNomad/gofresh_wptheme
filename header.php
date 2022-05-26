@@ -15,12 +15,12 @@
 
     <div class="grid-item  [ wrapper ]">
 <!-- NAVIGATION START -->
-            <header class="grid-item navigation" id="navigation">
+            <header class="grid-item navigation w-25vw h-100vh" id="navigation">
                  
                 <nav>
                    
                    <ul class="navigation__list ta-c">
-                       <li class=""><a href="#home">
+                       <li class="navigation__logo"><a href="#home">
                            <?php if (function_exists('the_custom_logo')) {
                                 the_custom_logo();
                            }?>
