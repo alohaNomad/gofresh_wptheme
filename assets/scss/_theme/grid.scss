@@ -1,0 +1,10 @@
+.gridContainer{
+
+    display:grid;
+
+}
+
+[class ^= "gridContainer__child"]:nth-child(odd){
+    background-color: $color-02;
+    
+}
