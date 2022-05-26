@@ -35,18 +35,18 @@
 // * @NOTICE: Enter the name of the breakpoint
 // */
 $map-width : (
-    6\/12  : ( percentage( 6 / 12 ), 0, 0, 0, 0, 1 ),
-    2\/12  : ( percentage( 2 / 12 ), 0, 0, 1, 1, 1 ),
-    10\/12  : ( percentage( 10 / 12 ), 0, 0, 0, 0, 1 ),
-    "100p" : ( 100%                , 1, 1, 1, 0, 1 ),
+    6\/12  : ( percentage( 6 / 12 ), 0, 0, 0, 0, 0 ),
+    2\/12  : ( percentage( 2 / 12 ), 0, 0, 0, 0, 0 ),
+    10\/12  : ( percentage( 10 / 12 ), 0, 0, 0, 0, 0 ),
+    "100p" : ( 100vw                , 1, 1, 1, 0, 1 ),
 );
 
 $map-max-width : (
-    "100p" : ( 100%, 0, 0, 0, 0, 0 ),
+    "100p" : ( 100vw, 0, 0, 0, 0, 0 ),
 );
 
 $map-min-width : (
-    "100p" : ( 100%, 0, 0, 0, 0, 0 ),
+    "100p" : ( 100vw, 0, 0, 0, 0, 0 ),
 );
 
 
@@ -65,7 +65,7 @@ $map-max-height : (
 );
 
 $map-min-height : (
-    "100p" : ( 100%, 0, 0, 0, 0, 0 ),
+    "100p" : ( 100vh, 0, 0, 0, 0, 0 ),
 );
 
 
@@ -76,6 +76,7 @@ $map-min-height : (
 $map-display : (
     "ib" : ( inline-block, 0, 0, 0, 0, 1 ),
     "b"  : ( block       , 0, 0, 0, 0, 1 ),
+    "n"  : ( none        , 0, 0, 0, 0, 1 ),
 );
 
 
@@ -121,10 +122,10 @@ $map-padding-top : (
 // * #position
 // */
 $map-position : (
-    'a' : ( absolute, 1, 1, 1, 1, 1 ),
-    'r' : ( relative, 1, 1, 1, 1, 1 ),
-    'f' : ( fixed, 1, 1, 1, 1, 1 ),
-    's' : ( sticky, 1, 1, 1, 1, 1 ),
+    'a' : ( absolute, 0, 0, 0, 0, 0 ),
+    'r' : ( relative, 0, 0, 0, 0, 0 ),
+    'f' : ( fixed, 0, 0, 0, 0, 0 ),
+    's' : ( sticky, 0, 0, 0, 0, 0 ),
 
 );
 
@@ -143,7 +144,7 @@ $map-margin-bottom : (
 );
 
 $map-margin-left : (
-    "20" : ( $base-font-size, 0, 1, 0, 0, 1 ),
+    "20" : ( $base-font-size, 0, 0, 0, 0, 1 ),
 );
 
 $map-margin-right : (
@@ -163,7 +164,7 @@ $map-margin-top : (
 // * #overflow
 // */
 $map-overflow : (
-    "h" : ( hidden, 1, 0, 0, 0, 0 ),
+    "h" : ( hidden, 0, 0, 0, 0, 0 ),
 );
 
 
@@ -173,7 +174,7 @@ $map-overflow : (
 // */
 $map-text-align : (
     "l" : ( left   , 0, 0, 0, 0, 1 ),
-    "c" : ( center , 1, 1, 0, 0, 1 ),
+    "c" : ( center , 0, 0, 0, 0, 1 ),
     "r" : ( right  , 0, 0, 0, 0, 1 ),
 );
 
