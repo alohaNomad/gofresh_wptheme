@@ -2,30 +2,26 @@
 get_header();
 ?>
 
-<main id="site-content">
-
+<main id="site-content" class="w-100vw w-75vw-d pos-r-d" style="left: 25vw;">
+	<section class="content content--clipped">
 	<?php
 
-	if ( have_posts() ) {
+if ( have_posts() ) {
 
-		while ( have_posts() ) {
-			the_post();
+	while ( have_posts() ) {
+		the_post();
 
 /* ++++++++++++++++++++++++++++++++++TODO!!!++++++++++++++++++++++++++++++++++ */
 get_template_part( 'template-parts/content', get_post_type() );
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-		}
 	}
+}
 
-	?>
+?>
+	</section>
 
+	<?php 
+get_footer();
+?>	
 </main><!-- #site-content -->
 
-<!-- ++++++++++++++++++++++++++++++++++TODO!!!++++++++++++++++++++++++++++++++++ -->
-<!-- <?php get_template_part( 'template-parts/footer-menus-widgets' ); ?> -->
-<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-
-
-<?php 
-get_footer();
-?>
