@@ -1,0 +1,21 @@
+// ********************************************************************************
+// * #Fonts
+// */
+$map-font : (
+    'BauerBodoniStd-Black 2' : (
+        'display' : 'swap',
+        'family'  : 'Bauer Bodoni',
+        'file'    : 'BauerBodoniStd-Black 2',
+        'style'   : 'normal',
+        'url'     : '../fonts/Bauer-Bodoni/',
+        'weight'  : 'bla',
+    ),
+);
+
+
+// ********************************************************************************
+// * #X-Elements
+// */
+$map-x-element: (
+    '.related' : (20px, 1, 2, 3, 4),
+);
