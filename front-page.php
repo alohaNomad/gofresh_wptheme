@@ -31,7 +31,28 @@ get_header(); ?>
                <section id="projects" class="content content--clipped" >
                    
                <div class="photo-grid">
-        <a href=# alt="p1"
+               <?php if (have_posts()):
+    // This function belowm is responsible for iterating through the posts
+    
+    while (have_posts()): the_post(); 
+      
+      $postID = rand(0,100);
+      $class = '';
+      if($postID%4==0){$class='card';} elseif($postID%3==0){$class='card card-tall';} elseif($postID%2==0){$class='card card-wide';} else{$class='card card-tall card-wide';}
+        ?>
+
+      <a href="<?php the_permalink() ?>" alt="p1"
+        class="<?php echo $class; ?>"
+        style="background-image:url(<?php if ( has_post_thumbnail() ) { 
+          // check if the post has a Post Thumbnail assigned to it.
+          the_post_thumbnail_url();} ?>)">
+      </a>
+
+    <?php
+          endwhile; ?>
+    <?php
+endif; ?>
+       <!--  <a href=# alt="p1"
         class="card card-tall card-wide"
         style="background-image:url('https://images.unsplash.com/photo-1558981359-219d6364c9c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80')"
         >
@@ -101,7 +122,7 @@ get_header(); ?>
         class="card"
         style="background-image:url('https://images.unsplash.com/photo-1583518257225-f9a8081f6a84?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')"
       >
-      </a>
+      </a> -->
       
     </div>
                  
@@ -111,7 +132,8 @@ get_header(); ?>
                
     
                <section id="contact" class="content">
-                <div><h1>Contact</h1></div>
+  
+
                 
                 </section>
 
