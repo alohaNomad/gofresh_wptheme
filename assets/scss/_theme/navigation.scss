@@ -18,9 +18,10 @@
             display:block;
             padding: 0.5rem 0;
             background-color: $color-00;
+            transition: 0.5s;
         }
-        :hover{
-            transition: 0.25s;
+        a:hover{
+            
             background-color: $color-01;
         }
 

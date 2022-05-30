@@ -41,11 +41,11 @@ get_header(); ?>
       if($postID%4==0){$class='card';} elseif($postID%3==0){$class='card card-tall';} elseif($postID%2==0){$class='card card-wide';} else{$class='card card-tall card-wide';}
         ?>
 
-      <a href="<?php the_permalink() ?>" alt="p1"
-        class="<?php echo $class; ?>"
+      <a href="<?php the_permalink() ?>" alt=""
+        class="<?php echo $class;?>"
         style="background-image:url(<?php if ( has_post_thumbnail() ) { 
           // check if the post has a Post Thumbnail assigned to it.
-          the_post_thumbnail_url();} ?>)">
+          the_post_thumbnail_url();} ?>)"> <p style="font-size:2rem;"><?php the_title();?></p> <?php the_excerpt('small'); ?>
       </a>
 
     <?php
