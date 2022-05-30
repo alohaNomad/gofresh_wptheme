@@ -25,10 +25,10 @@
                                 the_custom_logo();
                            }?>
                        </a></li>
-                       <li class="navigation__links"><a href="#home">Home</a></li>
-                       <li class="navigation__links"><a href="#about">About</a></li>
-                       <li class="navigation__links"><a href="#projects">Projects</a></li>
-                       <li class="navigation__links"><a href="#contact">Contact</a></li>
+                       <li class="navigation__links"><a href="/wordpress/#home">Home</a></li>
+                       <li class="navigation__links"><a href="/wordpress/#about">About</a></li>
+                       <li class="navigation__links"><a href="/wordpress/#projects">Projects</a></li>
+                       <li class="navigation__links"><a href="/wordpress/#contact">Contact</a></li>
                        <li class=""><a href="javascript:void(0);" class="icon" onclick="toggleNav()">
                         <i class="fa fa-bars"></i>
                       </a></li>
