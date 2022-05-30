@@ -12,7 +12,7 @@
     </head>
 
     <body class="grid-container  [ ta-c ]" style="margin:0;" <?php body_class();?>>
-
+ 
     <div class="grid-item  [ wrapper ]">
 <!-- NAVIGATION START -->
             <header class="grid-item navigation w-25vw h-100vh" id="navigation">
