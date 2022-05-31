@@ -1,3 +1,73 @@
+<!-- <?PHP
+  // form handler
+  //wenn alle values gesetzt sind...
+ /*  if($_POST && isset($_POST['sendfeedback'], $_POST['fname'], $_POST['lname'], $_POST['email'], $_POST['message'])) {
+    //...setze variablen
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $email = $_POST['email']; */
+/*     $subject = $_POST['subject']; */
+   /*  $message = $_POST['message'];
+
+    //teste variablen
+    if(!$fname) {
+      $errorMsg = "Please enter your First Name";
+    } elseif(!$lname) {
+        $errorMsg = "Please enter your Last Name";
+    }
+      elseif(!$email || !preg_match("/^\S+@\S+$/", $email)) {
+      $errorMsg = "Please enter a valid Email address";
+    } elseif(!$message) {
+      $errorMsg = "Please enter your comment in the Message box";
+    } else {
+      // send email and redirect
+      $to = "hm@jh.com";
+      /* if(!$subject) $subject = "Contact from website"; */
+     /*  $headers = "From: $email" . "\r\n";
+      mail($to, $subject, $message, $headers);
+      header("Location: /wordpress/index.php");
+      exit;
+    }
+
+  } */
+?>
+<?PHP
+/*   // form handler
+  function validateFeedbackForm($arr)
+  {
+    extract($arr);
+
+    if(!isset($fname, $lname, $email, $subject, $message)) return;
+
+    if(!$fname) {
+      return "Please enter your First Name";
+    }
+    if(!$lname) {
+        return "Please enter your Last Name";
+      }
+    if(!preg_match("/^\S+@\S+$/", $email)) {
+      return "Please enter a valid Email address";
+    }
+    if(!$subject) $subject = "Contact from website";
+    if(!$message) {
+      return "Please enter your comment in the Message box";
+    }
+
+    // send email and redirect
+    $to = "alohanomad.main@gmail.com";
+    $headers = "From: $email" . "\r\n";
+    mail($to, $subject, $message, $headers);
+    header("Location: ");
+    exit;
+  }
+
+  // execution starts here
+  if(isset($_POST['sendfeedback'])) {
+    // call form handler
+    $errorMsg = validateFeedbackForm($_POST);
+  } */
+?> BENUTZE action="admin=post.php" fuer form handeling mit wp -->
+
 <!DOCTYPE html>
 <html lang="en" >
     <head <?php wp_head();?>>
