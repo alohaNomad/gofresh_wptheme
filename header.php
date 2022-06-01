@@ -81,20 +81,16 @@
 
     </head>
 
-    <body class="grid-container  [ ta-c ]" style="margin:0;" <?php body_class();?>>
+    <body class="grid-container [ ta-c ]" style="margin:0;" <?php body_class();?>>
  
     <div class="grid-item  [ wrapper ]">
 <!-- NAVIGATION START -->
-            <header class="grid-item navigation w-25vw h-100vh" id="navigation">
+            <header class="grid-item " id="navigation">
                  
-                <nav>
+                <nav class="nav w-25vw h-100vh">
                    
-                   <ul class="navigation__list ta-c">
-                       <li class="navigation__logo"><a href="#home">
-                           <?php if (function_exists('the_custom_logo')) {
-                                the_custom_logo();
-                           }?>
-                       </a></li>
+                   <!-- <ul class="navigation__list ta-c">
+                       <li class="navigation__logo"></li>
                        <li class="navigation__links"><a href="/wordpress/#home">Home</a></li>
                        <li class="navigation__links"><a href="/wordpress/#about">About</a></li>
                        <li class="navigation__links"><a href="/wordpress/#projects">Projects</a></li>
@@ -102,7 +98,16 @@
                        <li class=""><a href="javascript:void(0);" class="icon" onclick="toggleNav()">
                         <i class="fa fa-bars"></i>
                       </a></li>
-                   </ul>
-                   
+                   </ul> -->
+    
+                  <?php 
+                  if (function_exists('the_custom_logo')) {
+                    the_custom_logo();
+               }
+                  $args = array('theme_location' => 'primary',
+                                'menu_class' => 'nav-ul',
+                                'container' => '');
+                  wp_nav_menu( $args ); ?>
+
                 </nav>
            </header>

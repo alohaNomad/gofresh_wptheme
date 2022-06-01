@@ -42,7 +42,7 @@ $map-width : (
     "100p" : ( 100%                , 1, 1, 1, 0, 1 ),
 
     "100vw" : ( 100vw                , 0, 0, 0, 0, 1 ),
-    "25vw" : ( 25vw                , 0, 0, 0, 0, 1 ),
+    "25vw" : ( 25vw                , 0, 0, 1, 0, 1 ),
     "75vw" : ( 75vw                , 0, 0, 1, 0, 1 ),
 );
 
@@ -62,7 +62,7 @@ $map-min-width : (
 // * @NOTICE: Enter the name of the breakpoint at usin the class
 // */
 $map-height : (
-    "100vh" : ( 100vh, 0, 0, 0, 0, 1 ),
+    "100vh" : ( 100vh, 0, 0, 1, 0, 1 ),
     "25vh" : ( 25vh, 0, 0, 0, 0, 1 ),
 );
 

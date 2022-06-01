@@ -7,8 +7,8 @@
 function gofresh_menus() {
 
 	$locations = array(
-		'primary'  => __( 'Desktop Horizontal Menu', 'gofresh' ),
-		'expanded' => __( 'Desktop Expanded Menu', 'gofresh' ),
+		'primary'  => __( 'Desktop Side Menu', 'gofresh' ),
+		'secondary' => __( 'Desktop Horizontal Menu', 'gofresh' ),
 		'mobile'   => __( 'Mobile Menu', 'gofresh' ),
 		'footer'   => __( 'Footer Menu', 'gofresh' ),
 		'social'   => __( 'Social Menu', 'gofresh' ),

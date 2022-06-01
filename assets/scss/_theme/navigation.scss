@@ -1,31 +1,21 @@
-.navigation{
-    background-color: $color-00;
+.nav{
+    background-color: $color-04;
     z-index: 5;
     position: sticky;
     top: 0px;
+    padding: 0;
 
+    .current-menu-item{background-color: $color-03;}
 
-    &__list{
-        list-style-type:  none;
-        padding: 0;
-
-        .icon{display: none;}
+    a{
+        display:block;
+        padding: 0.5rem 0;
+        background-color: $color-00;
+        transition: 0.5s;
     }
-
-    &__links{
+    a:hover{
         
-        a{
-            display:block;
-            padding: 0.5rem 0;
-            background-color: $color-00;
-            transition: 0.5s;
-        }
-        a:hover{
-            
-            background-color: $color-01;
-        }
-
-        
+        background-color: $color-01;
     }
 
     @media  screen and (max-width: 980px) {
