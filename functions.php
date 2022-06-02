@@ -68,7 +68,7 @@ require_once get_template_directory() . '/inc/custom-css.php';
 /* REGISTER AND ENQUEUE STYLES */
 require_once get_template_directory() . '/inc/register-styles.php';
 
-/* REGISTER AND ENQUEUE SCRIPTS */
+/* REGISTER AND ENQUEUE SCRIPTS */ 
 require_once get_template_directory() . '/inc/register-scripts.php';
 
 /* REGISTER NAV MENUS */

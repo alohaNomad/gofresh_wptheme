@@ -131,7 +131,7 @@ $map-position : (
     'a' : ( absolute, 0, 0, 1, 0, 1 ),
     'r' : ( relative, 0, 0, 1, 0, 1 ),
     'f' : ( fixed, 0, 0, 0, 0, 0 ),
-    's' : ( sticky, 0, 0, 0, 0, 0 ),
+    's' : ( sticky, 0, 0, 0, 0, 1 ),
 
 );
 

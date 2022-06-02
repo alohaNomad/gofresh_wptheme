@@ -12,8 +12,8 @@ function gofresh_register_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	wp_enqueue_script( 'gofresh-js', get_template_directory_uri() . '/assets/js/index.js', array(), $theme_version, false );
-	wp_enqueue_script( 'gofresh-jss', get_template_directory_uri() . '/assets/js/script.js', array(), $theme_version, false );
+/* 	wp_enqueue_script( 'gofresh-js', get_template_directory_uri() . '/assets/js/index.js', array(), $theme_version, false ); */ 
+	wp_enqueue_script( 'gofresh-js', get_template_directory_uri() . '/assets/js/script.js', array(), $theme_version, false );
 	wp_script_add_data( 'gofresh-js', 'async', true );
 
 }

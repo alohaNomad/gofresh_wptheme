@@ -85,9 +85,9 @@
  
     <div class="grid-item  [ wrapper ]">
 <!-- NAVIGATION START -->
-            <header class="grid-item " id="navigation">
+            <header class="grid-item w-25vw" style="position:sticky; top:0; z-index: 5;">
                  
-                <nav class="nav w-25vw h-100vh">
+                <nav class="navigation" id="navigation">
                    
                    <!-- <ul class="navigation__list ta-c">
                        <li class="navigation__logo"></li>
@@ -99,15 +99,21 @@
                         <i class="fa fa-bars"></i>
                       </a></li>
                    </ul> -->
-    
+                  
                   <?php 
                   if (function_exists('the_custom_logo')) {
                     the_custom_logo();
-               }
+               }?>
+                <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                        <i class="fa fa-bars"></i>
+                      </a>
+               <?php
                   $args = array('theme_location' => 'primary',
-                                'menu_class' => 'nav-ul',
+                                'menu_class' => 'navigation_ul',
+                                'li_class' => 'navigation_li',
                                 'container' => '');
                   wp_nav_menu( $args ); ?>
 
+                  
                 </nav>
            </header>

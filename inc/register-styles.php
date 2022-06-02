@@ -6,7 +6,7 @@
  */
 function gofresh_register_styles() {
 
-	$theme_version = wp_get_theme()->get( 'Version' );
+	$theme_version = /* wp_get_theme()->get( 'Version' ) */ 'null';
 
 	wp_enqueue_style( 'gofresh-style', get_template_directory_uri() . '/assets/css/style.css', array(), $theme_version );
 	wp_enqueue_style( 'gofresh-theme', get_template_directory_uri() . '/assets/css/theme.css', array(), $theme_version );

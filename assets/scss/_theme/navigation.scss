@@ -1,40 +1,44 @@
-.nav{
-    background-color: $color-04;
-    z-index: 5;
-    position: sticky;
-    top: 0px;
+.navigation{
+    background-color: $color-00;
     padding: 0;
+    width: 25vw;
+    height: 100vh;
 
-    .current-menu-item{background-color: $color-03;}
+    img{width:100%;}
 
-    a{
+    &_ul{
+        text-align: center;
+        padding: 0;
+    }
+
+    #menu-main a{
         display:block;
         padding: 0.5rem 0;
         background-color: $color-00;
         transition: 0.5s;
-    }
-    a:hover{
-        
-        background-color: $color-01;
+
+         &:hover {
+            transform: translateX(2rem);
+            background-color: $color-01;}
     }
 
+    a.icon{display: none;}
+
     @media  screen and (max-width: 980px) {
-        width: 100%;
+        width: 100vw;
         height: 25vh;
-        .navigation__links {display: none;}
+
+        #menu-main a {display: none;}
+
         a.icon {
             float: right;
             display: block;
-            position: absolute;
-            right: 0;
-            top: 0;
             
             padding: 4rem;
           }
-        
-        &__logo{
-            text-align: left;
-        }
+
+        img{width:auto;
+                height:100%;}
     }
     
 }
@@ -42,9 +46,8 @@
 .navigation.responsive{
     
     @media screen and (max-width: 980px) {
-        position: sticky;
 
-         .navigation__links {
+         #menu-main a {
           float: none;
           display: block;
           text-align: center;
