@@ -114,4 +114,7 @@ require_once get_template_directory() . '/inc/block-editor-settings.php';
 require_once get_template_directory() . '/inc/block-editor-styles.php';
 /* BLOCK PATTERNS */
 require_once get_template_directory() . '/inc/block-patterns.php';
+
+/* Include ID in the dashboard */
+require_once get_template_directory() . '/inc/new-editor-column.php';
 ?>

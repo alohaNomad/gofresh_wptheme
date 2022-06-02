@@ -1,6 +1,6 @@
 <?php wp_footer(); ?>
 
-            <footer class="w-100p pos-a-d pos-r" style="bottom: 0;">
+            <footer class="w-100vw w-75vw-d pos-r-d" style="float:right; bottom: 0;">
                 
             <div>spalte 1</div>
             <div>spalte 2</div>
@@ -11,8 +11,5 @@
                 </p>
                 
             </footer>
-
-            </div>
-        </div>
     </body>
 </html>

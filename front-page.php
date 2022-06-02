@@ -11,21 +11,74 @@ get_header(); ?>
                       <button>Hire me</button>
                     </div>
           </div>
+
+          <!-- LOAD PAGES CONTENT INTO FRONT PAGE -->
+          <?php
+      $nav_items = wp_get_nav_menu_items( 'main' );
+       if( ! empty( $nav_items ) ) {
+        
+        $x = '2';
+
+        foreach( $nav_items as $item ) {
+          $query = new WP_Query( array( 'post_type' => 'page',
+                                        'page_id' => $item->object_id, ));
+            
+              while($query->have_posts()){
+              $query->the_post();                                
+               //variables
+               $s_class = '';
+             
+
+               //change every second class
+               if($x%2==0){$s_class='content';}
+                     else{$s_class='content content--clipped';}?>
+                 <section id="<?php the_ID(); ?>" class="<?php echo $s_class ?>">
+                   <h1><?php the_title(); ?></h1>
+                   <?php the_content(); ?>
+                 </section>
+                 <?php
+                 $x+=1;
+            
+            }
+            
+          wp_reset_query();
+          
          
-            <!-- ABOUT SECTION -->
-            <section id="about" class="content">
-                <h1>About me</h1>
-                <div class="about">
-                  <div class="about__img"><img src="/assets/img/pexels-dapo-abideen-3535630.jpg" alt="Marius Wolber" style="max-width: 100%;"></div>
-                    
-                  <div class="about__text">
-                    <h2>My Name is Marius, nice too meet you</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus atque esse, et quisquam numquam, laudantium porro vel deserunt, unde quae optio rem eveniet consequatur cum fugit debitis. Tenetur, consectetur soluta?</p>
-                  </div>
-               
-                </div>
-                
-          </section>
+
+
+        }
+    }
+
+/*             //change query filter
+            $query = new WP_Query( array( 'post_type' => 'page',
+                                          'orderby' => 'menu_order title',
+                                          'order'   => 'ASC') );
+
+            
+            $x = '2';
+
+            //loop start
+            while($query->have_posts()){
+              $query->the_post();
+              //variables
+              $s_class = '';
+             
+
+            //change every second class
+            if($x%2==0){$s_class='content';}
+                  else{$s_class='content content--clipped';}?>
+              <section id="<?php the_ID(); ?>" class="<?php echo $s_class ?>">
+                <h1><?php the_title(); ?></h1>
+                <?php the_content(); ?>
+              </section>
+              <?php
+              $x+=1;
+            }
+
+              wp_reset_query(); */
+          ?>
+
+
 
             <!-- PROJECT SECTION -->
             <section id="projects" class="content content--clipped" >
@@ -64,39 +117,6 @@ get_header(); ?>
                  
           </section>
             
-            <!-- CONTACT SECTION -->
-            <section id="contact" class="content">
-            
-              <form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" target="_blank" method="post">
-                <input type="hidden" name="action" value="contact_form">
-                <?php /* if(isset($errorMsg) && $errorMsg) {echo "<p style=\"color: red;\">*",htmlspecialchars($errorMsg),"</p>\n\n";} */?>
-                  
-                  <label for="fname">First name:</label><br>
-                  <input type="text" id="fname" name="fname" placeholder="Jon" required value="<?PHP if(isset($_POST['fname'])) echo htmlspecialchars($_POST['fname']); ?>"><br>
-
-                  <label for="lname">Last name:</label><br>
-                  <input type="text" id="lname" name="lname" placeholder="Doe" required value="<?PHP if(isset($_POST['lname'])) echo htmlspecialchars($_POST['lname']); ?>"><br>
-
-                  <label for="email">E-Mail:</label><br>
-                  <input type="email" id="email" name="email" placeholder="jon-doe@fresh.com" required value="<?PHP if(isset($_POST['email'])) echo htmlspecialchars($_POST['email']); ?>"><br>
-
-                  <label for="message">Your Message:</label><br>
-                  <textarea id="message" name="message" rows="10" cols="20" placeholder="Let's chat!" required value="<?PHP if(isset($_POST['message'])) echo htmlspecialchars($_POST['message']); ?>"></textarea><br>
-
-                  <input type="submit" name="sendfeedback" value="Submit">
-              </form>
-
-              <div>
-                <ul>
-                  <li><a href="#facebook"><i class="fa fa-facebook-square"></i>  Like me on Facebook</a></li>
-                  <li><a href="#telegram"><i class="fa fa-telegram"></i>  Message me on Telegram</a></li>
-                  <li><a href="#telegram"><i class="fa fa fa-instagram"></i>  Follow me on Instagram</a></li>
-                </ul>          
-              </div>
-            
-            
-                
-          </section>
 <!-- CONTENT END -->
 
 
