@@ -5,4 +5,4 @@ function toggleNav() {
     } else {
       x.className = "navigation";
     }
-  }
+  }  
