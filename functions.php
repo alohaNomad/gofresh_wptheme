@@ -117,4 +117,16 @@ require_once get_template_directory() . '/inc/block-patterns.php';
 
 /* Include ID in the dashboard */
 require_once get_template_directory() . '/inc/new-editor-column.php';
+
+
+/* CHANGE LINK HREF TO SECTION ID SO MENU IS SCROLLABLE */
+function add_menu_atts($atts, $item, $args){
+    // your check for primary menu location
+    if( $args->theme_location == 'primary' ) {
+      $atts['href'] = get_home_url( ) . "/#" . $item->object_id;
+    }     
+  
+    return $atts;
+  }
+  add_filter('nav_menu_link_attributes', 'add_menu_atts', 10, 3);
 ?>

@@ -9,7 +9,6 @@ function gofresh_menus() {
 	$locations = array(
 		'primary'  => __( 'Desktop Side Menu', 'gofresh' ),
 		'secondary' => __( 'Desktop Horizontal Menu', 'gofresh' ),
-		'mobile'   => __( 'Mobile Menu', 'gofresh' ),
 		'footer'   => __( 'Footer Menu', 'gofresh' ),
 		'social'   => __( 'Social Menu', 'gofresh' ),
 	);

@@ -4,7 +4,7 @@ function add_post_column( $columns ){
 	$columns['post_id_clmn'] = 'ID'; // $columns['Column ID'] = 'Column Title';
 	return $columns;
 }
-add_filter('manage_posts_columns', 'add_pos_column', 5);
+add_filter('manage_posts_columns', 'add_post_column', 5);
 
 function column_post_content( $column, $id ){
 	if( $column === 'post_id_clmn')
